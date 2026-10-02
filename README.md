@@ -19,7 +19,8 @@ PopTracker pack for The Legend of Zelda: The Wind Waker HD
 
 1. Entrance Randomizer has not been tested.
 2. Replace the SD assets with HD ones.
-3. Make location names consistent with HD randomizer.
+3. Make location names consistent with the HD randomizer.
+4. The tracker doesn't auto change into the dungeon maps when you enter a dungeon, not sure if this is possible to fix yet.
 
 
 ## Important Notes
