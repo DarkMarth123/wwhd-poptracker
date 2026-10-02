@@ -2115,19 +2115,19 @@
             "name": "Outset Island",
             "sections": [
               {
-                "name": "Underneath Link's House",
+                "name": "Under Link's House",
                 "visibility_rules": [
                   "misc_on"
                 ]
               },
               {
-                "name": "Mesa the Grasscutter's House",
+                "name": "Mesa's House Chest",
                 "visibility_rules": [
                   "misc_on"
                 ]
               },
               {
-                "name": "Orca - Give 10 Knight's Crests",
+                "name": "Orca Give 10 Knight's Crests",
                 "access_rules": [
                   [
                     "spoils",
@@ -2150,7 +2150,7 @@
                 ]
               },
               {
-                "name": "Jabun's Cave",
+                "name": "Jabun's Cave Chest",
                 "chest_unopened_img": "images/items/chest_spiky.png",
                 "chest_opened_img": "images/items/chest_spiky_gray.png",
                 "access_rules": [
@@ -2174,7 +2174,7 @@
                 ]
               },
               {
-                "name": "Savage Labyrinth - Floor 30",
+                "name": "Savage Labyrinth Floor 30",
                 "inspectable_sequence_break": true,
                 "access_rules": [
                   [
@@ -2189,7 +2189,7 @@
                 ]
               },
               {
-                "name": "Savage Labyrinth - Floor 50",
+                "name": "Savage Labyrinth Floor 50",
                 "inspectable_sequence_break": true,
                 "_comment": [
                   "'@' rules turn Inspect into Normal accessibility, so Floor 50 cannot use",

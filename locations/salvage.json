@@ -29,27 +29,9 @@
         ]
       },
       {
-        "name": "Gale Isle - Sunken Triforce 2",
+        "name": "Stone Watcher Island - Sunken Triforce 2",
         "access_rules": [
           "triforce2"
-        ],
-        "sections": [
-          {
-            "name": "Salvage"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "salvage",
-            "x": 408,
-            "y": 41
-          }
-        ]
-      },
-      {
-        "name": "Stone Watcher Island - Sunken Triforce 3",
-        "access_rules": [
-          "triforce3"
         ],
         "sections": [
           {
@@ -64,28 +46,11 @@
           }
         ]
       },
+      
       {
-        "name": "Outset island - Sunken Triforce 4",
+        "name": "Cliff Plateau Isles - Sunken Triforce 3",
         "access_rules": [
-          "triforce4"
-        ],
-        "sections": [
-          {
-            "name": "Salvage"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "salvage",
-            "x": 171,
-            "y": 738
-          }
-        ]
-      },
-      {
-        "name": "Cliff Plateau Isles - Sunken Triforce 5",
-        "access_rules": [
-          "triforce5"
+          "triforce3"
         ],
         "sections": [
           {
@@ -97,64 +62,6 @@
             "map": "salvage",
             "x": 699,
             "y": 588
-          }
-        ]
-      },
-      {
-        "name": "Southern Triangle Island - Sunken Triforce 6",
-        "access_rules": [
-          "triforce6, @Macros/can_defeat_seahats",
-          "triforce6, @General Logic/Normal Logic Precision"
-        ],
-        "sections": [
-          {
-            "name": "Salvage"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "salvage",
-            "x": 389,
-            "y": 499
-          }
-        ]
-      },
-      {
-        "name": "Seven-Star Isles - Sunken Triforce 7",
-        "access_rules": [
-          "triforce7, bombs",
-          "triforce7, @General Logic/Normal Logic Precision"
-        ],
-        "sections": [
-          {
-            "name": "Salvage"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "salvage",
-            "x": 626,
-            "y": 41
-          }
-        ]
-      },
-      {
-        "name": "Two-Eye Reef - Sunken Triforce 8",
-        "access_rules": [
-          "triforce8, bombs",
-          "triforce8, @General Logic/Normal Logic Precision",
-          "triforce8, @Macros/can_use_magic_armor, @General Logic/Normal Logic Obscurity"
-        ],
-        "sections": [
-          {
-            "name": "Salvage"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "salvage",
-            "x": 388,
-            "y": 699
           }
         ]
       }
@@ -914,6 +821,100 @@
             "map": "salvage",
             "x": 81,
             "y": 152
+          }
+        ]
+      },
+      {
+        "name": "Gale Isle - Sunken Treasure 42",
+        "access_rules": [
+          "treasure42"
+        ],
+        "sections": [
+          {
+            "name": "Salvage"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "salvage",
+            "x": 408,
+            "y": 41
+          }
+        ]
+      },
+      {
+        "name": "Outset island - Sunken Treasure 43",
+        "access_rules": [
+          "treasure43"
+        ],
+        "sections": [
+          {
+            "name": "Salvage"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "salvage",
+            "x": 171,
+            "y": 738
+          }
+        ]
+      },
+      {
+        "name": "Southern Triangle Island - Sunken Treasure 44",
+        "access_rules": [
+          "treasure44, @Macros/can_defeat_seahats",
+          "treasure44, @General Logic/Normal Logic Precision"
+        ],
+        "sections": [
+          {
+            "name": "Salvage"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "salvage",
+            "x": 389,
+            "y": 499
+          }
+        ]
+      },
+      {
+        "name": "Seven-Star Isles - Sunken Treasure 45",
+        "access_rules": [
+          "treasure45, bombs",
+          "treasure45, @General Logic/Normal Logic Precision"
+        ],
+        "sections": [
+          {
+            "name": "Salvage"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "salvage",
+            "x": 626,
+            "y": 41
+          }
+        ]
+      },
+      {
+        "name": "Two-Eye Reef - Sunken Treasure 46",
+        "access_rules": [
+          "treasure46, bombs",
+          "treasure46, @General Logic/Normal Logic Precision",
+          "treasure46, @Macros/can_use_magic_armor, @General Logic/Normal Logic Obscurity"
+        ],
+        "sections": [
+          {
+            "name": "Salvage"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "salvage",
+            "x": 388,
+            "y": 699
           }
         ]
       }

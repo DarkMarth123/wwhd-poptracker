@@ -497,15 +497,6 @@
             ]
           },
           {
-            "name": "Lenzo's House - Bring Forest Firefly",
-            "access_rules": [
-              "picto, bottle, @Macros/can_access_forest_haven"
-            ],
-            "visibility_rules": [
-              "longsq_on"
-            ]
-          },
-          {
             "name": "Sam - Decorate the Town",
             "access_rules": [
               "@Macros/rescued_aryll, delivery"
@@ -1431,36 +1422,36 @@
         "name": "Outset Island",
         "sections": [
           {
-            "name": "Underneath Link's House",
-            "ref": "The Great Sea/Outset Island Sector/Outset Island/Underneath Link's House"
+            "name": "Under Link's House",
+            "ref": "The Great Sea/Outset Island Sector/Outset Island/Under Link's House"
           },
           {
-            "name": "Mesa the Grasscutter's House",
-            "ref": "The Great Sea/Outset Island Sector/Outset Island/Mesa the Grasscutter's House"
+            "name": "Mesa's House Chest",
+            "ref": "The Great Sea/Outset Island Sector/Outset Island/Mesa's House Chest"
           },
           {
-            "name": "Orca - Give 10 Knight's Crests",
-            "ref": "The Great Sea/Outset Island Sector/Outset Island/Orca - Give 10 Knight's Crests"
+            "name": "Orca Give 10 Knight's Crests",
+            "ref": "The Great Sea/Outset Island Sector/Outset Island/Orca Give 10 Knight's Crests"
           },
           {
             "name": "Great Fairy",
             "ref": "The Great Sea/Outset Island Sector/Outset Island/Great Fairy"
           },
           {
-            "name": "Jabun's Cave",
-            "ref": "The Great Sea/Outset Island Sector/Outset Island/Jabun's Cave"
+            "name": "Jabun's Cave Chest",
+            "ref": "The Great Sea/Outset Island Sector/Outset Island/Jabun's Cave Chest"
           },
           {
             "name": "Dig up Black Soil",
             "ref": "The Great Sea/Outset Island Sector/Outset Island/Dig up Black Soil"
           },
           {
-            "name": "Savage Labyrinth - Floor 30",
-            "ref": "The Great Sea/Outset Island Sector/Outset Island/Savage Labyrinth - Floor 30"
+            "name": "Savage Labyrinth Floor 30",
+            "ref": "The Great Sea/Outset Island Sector/Outset Island/Savage Labyrinth Floor 30"
           },
           {
-            "name": "Savage Labyrinth - Floor 50",
-            "ref": "The Great Sea/Outset Island Sector/Outset Island/Savage Labyrinth - Floor 50"
+            "name": "Savage Labyrinth Floor 50",
+            "ref": "The Great Sea/Outset Island Sector/Outset Island/Savage Labyrinth Floor 50"
           }
         ],
         "map_locations": [

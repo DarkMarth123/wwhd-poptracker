@@ -43,7 +43,7 @@
         "codes": "leaf"
     },
     {
-        "name": "Tingle Tuner",
+        "name": "Tingle Bottle",
         "type": "toggle",
         "img": "images/items/item7.png",
         "codes": "tuner"
@@ -620,54 +620,20 @@
         "codes": "triforce1"
     },
     {
-        "name": "Triforce Chart 2 - Gale Isle",
+        "name": "Triforce Chart 2 - Stone Watcher Island",
         "type": "toggle",
         "img": "images/items/chart2.png",
         "initial_active_state": false,
         "codes": "triforce2"
     },
     {
-        "name": "Triforce Chart 3- Stone Watcher Island",
+        "name": "Triforce Chart 3 - Cliff Plateau Isles",
         "type": "toggle",
         "img": "images/items/chart2.png",
         "initial_active_state": false,
         "codes": "triforce3"
     },
-    {
-        "name": "Triforce Chart 4 - Outset Island",
-        "type": "toggle",
-        "img": "images/items/chart2.png",
-        "initial_active_state": false,
-        "codes": "triforce4"
-    },
-    {
-        "name": "Triforce Chart 5 - Cliff Plateau Isles",
-        "type": "toggle",
-        "img": "images/items/chart2.png",
-        "initial_active_state": false,
-        "codes": "triforce5"
-    },
-    {
-        "name": "Triforce Chart 6 - Southern Triangle Island",
-        "type": "toggle",
-        "img": "images/items/chart2.png",
-        "initial_active_state": false,
-        "codes": "triforce6"
-    },
-    {
-        "name": "Triforce Chart 7 - Seven-Star Isles",
-        "type": "toggle",
-        "img": "images/items/chart2.png",
-        "initial_active_state": false,
-        "codes": "triforce7"
-    },
-    {
-        "name": "Triforce Chart 8 - Two-Eye Reef",
-        "type": "toggle",
-        "img": "images/items/chart2.png",
-        "initial_active_state": false,
-        "codes": "triforce8"
-    },
+    
     {
         "name": "Treasure Chart 1 - Private Oasis",
         "type": "toggle",
@@ -954,5 +920,40 @@
         "img": "images/items/chart1.png",
         "initial_active_state": false,
         "codes": "treasure41"
+    },
+    {
+        "name": "Treasure Chart 42 - Gale Isle",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure42"
+    },
+    {
+        "name": "Treasure Chart 43 - Outset Island",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure43"
+    },
+    {
+        "name": "Treasure Chart 44 - Southern Triangle Island",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure44"
+    },
+    {
+        "name": "Treasure Chart 45 - Seven-Star Isles",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure45"
+    },
+    {
+        "name": "Treasure Chart 46 - Two-Eye Reef",
+        "type": "toggle",
+        "img": "images/items/chart1.png",
+        "initial_active_state": false,
+        "codes": "treasure46"
     }
 ]

@@ -90,15 +90,6 @@
         ]
       },
       {
-        "name": "Tingle Statue in Hub Room",
-        "access_rules": [
-          "@Exit Logic/Dragon Roost Cavern, drc_small:4, @Macros/has_tingle_bombs"
-        ],
-        "visibility_rules": [
-          "tinglechests_on"
-        ]
-      },
-      {
         "name": "Pot on Upper Shelf in Pot Room",
         "access_rules": [
           "@Exit Logic/Dragon Roost Cavern, drc_small:4"
@@ -453,25 +444,6 @@
                 "map": "drc",
                 "x": 514,
                 "y": 559
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Tingle Statue in Hub Room",
-        "children": [
-          {
-            "sections": [
-              {
-                "ref": "Dragon Roost Cavern/Tingle Statue in Hub Room"
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "drc",
-                "x": 331,
-                "y": 405
               }
             ]
           }

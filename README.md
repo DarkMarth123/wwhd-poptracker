@@ -1,11 +1,13 @@
-# Wind Waker Tracker
+## Warning consider this tracker as experimental
 
-PopTracker pack for The Legend of Zelda: The Wind Waker
+# Wind Waker HD Tracker
+
+PopTracker pack for The Legend of Zelda: The Wind Waker HD
 
 ## Installation
 
-1. Add the "ww-poptracker" zip into your poptracker/packs folder.
-2. In PopTracker, click on the folder in the top left and navigate to the Wind Waker tracker (pick the Entrance Rando variant if you are using entrance randomization).
+1. Add the "wwhd-poptracker" zip into your poptracker/packs folder.
+2. In PopTracker, click on the folder in the top left and navigate to the Wind Waker HD tracker (pick the Entrance Rando variant if you are using entrance randomization).
 3. There are boxes all over the map of varying colors, they represent the following: 
     Green - Can get
     Red - Can't get
@@ -15,9 +17,10 @@ PopTracker pack for The Legend of Zelda: The Wind Waker
 
 ## To-Do List
 
-1. Higher resolution maps. I'm still hoping for Temple of the Gods and Forsaken Fortress 3D maps to match other dungeons.
-2. More precise location icons on the Sea Chart map.
-3. Add more "out of logic" checks" where possible (probably going to limit this to the more accessible methods, nothing too difficult).
+1. Entrance Randomizer has not been tested.
+2. Replace the SD assets with HD ones.
+3. Make location names consistent with HD randomizer.
+
 
 ## Important Notes
 
@@ -25,6 +28,7 @@ PopTracker pack for The Legend of Zelda: The Wind Waker
 
 ## Credits
 
+@Mysteryem, current maintainer of the SD tracker
 @Ouro-dev, the original author of the tracker
 
 3D map renders by VGCartography
