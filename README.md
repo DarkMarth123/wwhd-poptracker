@@ -29,6 +29,7 @@ PopTracker pack for The Legend of Zelda: The Wind Waker HD
 ## Credits
 
 @Mysteryem, current maintainer of the SD tracker
+
 @Ouro-dev, the original author of the tracker
 
 3D map renders by VGCartography
