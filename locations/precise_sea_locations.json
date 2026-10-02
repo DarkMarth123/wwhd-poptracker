@@ -1184,7 +1184,7 @@
                 ],
                 "visibility_rules": [
                   // Hyrule can never be a non-required dungeon, so is unaffected by Required Bosses.
-                  "dungeons_on"
+                  "misc_on"
                 ]
               },
               {
