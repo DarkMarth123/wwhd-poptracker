@@ -14,7 +14,7 @@ require("scripts/utils")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
-local VISITED_STAGES_FORMAT = "tww_visited_stages_%i"
+local VISITED_STAGES_FORMAT = "twwhd_visited_stages_%i"
 -- The first integer is the team (mostly unused by Archipelago currently). The second integer is the slot number.
 local GOAL_STATUS_FORMAT = "_read_client_status_%i_%i"
 -- Data storage key
@@ -609,7 +609,7 @@ function onBounced(value)
     end
 
     -- The key is specified in the AP client.
-    onMap(data["tww_stage_name"])
+    onMap(data["twwhd_stage_name"])
 end
 
 local function updateForStatusChange(status_value)
