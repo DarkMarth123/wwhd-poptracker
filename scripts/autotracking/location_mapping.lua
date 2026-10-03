@@ -35,6 +35,10 @@ LOCATION_MAPPING = {
     [0x196c5] = "@The Great Sea (Deprecated)/Windfall Island - Minigames/40 Rupee Auction",
     [0x196c6] = "@The Great Sea (Deprecated)/Windfall Island - Minigames/60 Rupee Auction",
     [0x196c7] = "@The Great Sea (Deprecated)/Windfall Island - Minigames/80 Rupee Auction",
+
+    [0x197e4] = "@The Great Sea (Deprecated)/Windfall Island - Minigames/100 Rupee Auction", -- HD exclusive auction location
+    [0x197e5] = "@The Great Sea (Deprecated)/Windfall Island - Minigames/Dampa Pig Minigame", -- HD exclusive Minigame location
+
     [0x196c8] = "@The Great Sea (Deprecated)/Windfall Island - Short Sidequests/Zunari - Stock Exotic Flower in Zunari's Shop",
     [0x196c9] = "@The Great Sea (Deprecated)/Windfall Island - Long Sidequests/Sam - Decorate the Town",
     [0x196ce] = "@The Great Sea (Deprecated)/Windfall Island - Short Sidequests/Mila - Follow the Thief",

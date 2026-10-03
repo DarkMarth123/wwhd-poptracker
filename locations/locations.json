@@ -582,6 +582,12 @@
             ]
           },
           {
+            "name": "100 Rupee Auction",
+            "visibility_rules": [
+              "expensive_on,minigames_on"
+            ]
+          },
+          {
             "name": "Battlesquid - First Prize",
             "visibility_rules": [
               "sploosh_on"
@@ -597,6 +603,15 @@
             "name": "Battlesquid - Under 20 Shots Prize",
             "visibility_rules": [
               "sploosh_on"
+            ]
+          },
+          {
+            "name": "Dampa Pig Minigame",
+            "access_rules": [
+              "spoils, @Macros/can_farm_skull_necklaces"
+            ],
+            "visibility_rules": [
+              "spoilssq_on,minigames_on"
             ]
           }
         ],
