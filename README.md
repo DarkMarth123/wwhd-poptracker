@@ -17,10 +17,9 @@ PopTracker pack for The Legend of Zelda: The Wind Waker HD
 
 ## To-Do List
 
-1. Entrance Randomizer has not been tested.
-2. Replace the SD assets with HD ones.
-3. Make location names consistent with the HD randomizer.
-
+1. Replace the SD assets with HD ones.
+2. Make location names consistent with the HD randomizer.
+3. Make entrance and exit names consistent with HD randomizer.
 
 ## Important Notes
 
