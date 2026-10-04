@@ -25,6 +25,125 @@ local SLOT_DATA_EXIT_TO_ENTRANCE = {}
 
 -- Tracker Tab names and the Stages that should swap to those tabs.
 -- Stage names from https://github.com/LagoLunatic/wwrando/blob/master/data/stage_names.txt
+
+local _ENTRANCE_ALIASES = {
+
+   ["Dragon Roost Pond Past Statues -> DRC First Room"]                                             = "Dungeon Entrance on Dragon Roost Island",
+   ["FW Entrance Platform -> FW First Room"]                                                        = "Dungeon Entrance in Forest Haven Sector",
+   ["Tower of the Gods Sector -> TOTG Entrance Room"]                                               = "Dungeon Entrance in Tower of the Gods Sector",
+   ["Headstone Island Interior -> ET First Room"]                                                   = "Dungeon Entrance on Headstone Island",
+   ["Gale Isle Interior -> WT First Room"]                                                          = "Dungeon Entrance on Gale Isle",
+   ["FW Tall Room Before Mini Boss -> FW Mini Boss Room"]                                           = "Miniboss Entrance in Forbidden Woods", 
+   ["TOTG West Servant Corridor Near Mini Boss Room -> TOTG Mini Boss Room"]                        = "Miniboss Entrance in Tower of the Gods",
+   ["ET Two Moblins and Poes Room Past Stairs -> ET Mini Boss Room"]                                = "Miniboss Entrance in Earth Temple",
+   ["WT Hub Room Basement Above Fan -> WT Mini Boss Room"]                                          = "Miniboss Entrance in Wind Temple",
+   ["Hyrule Castle Interior -> Hyrule Castle Sword Chamber"]                                        = "Miniboss Entrance in Hyrule Castle",
+   ["DRC Boss Door Room Across Lava -> Gohma Battle Arena"]                                         = "Boss Entrance in Dragon Roost Cavern",
+   ["FW Boss Door Room -> Kalle Demos Battle Arena"]                                                = "Boss Entrance in Forbidden Woods",
+   ["TOTG Outside Area -> Gohdan Battle Arena"]                                                     = "Boss Entrance in Tower of the Gods", 
+   ["Forsaken Fortress Before Boss Door -> Helmaroc King Battle Arena"]                             = "Boss Entrance in Forsaken Fortress",
+   ["ET Boss Door Room -> Jalhalla Battle Arena"]                                                   = "Boss Entrance in Earth Temple",
+   ["WT Three Big Fans Room Past Song Stone -> Molgera Battle Arena"]                               = "Boss Entrance in Wind Temple", 
+   ["Outset Near Savage Headstone -> Outset Savage Labyrinth"]                                      = "Secret Cave Entrance on Outset Island",
+   ["Dragon Roost Island -> Dragon Roost Island Cave"]                                              = "Secret Cave Entrance on Dragon Roost Island",
+   ["Fire Mountain -> Fire Mountain Interior"]                                                      = "Secret Cave Entrance on Fire Mountain",
+   ["Ice Ring Isle -> Ice Ring Interior"]                                                           = "Secret Cave Entrance on Ice Ring Isle", 
+   ["The Cabana -> Cabana Labyrinth"]                                                               = "Secret Cave Entrance on Private Oasis",
+   ["Needle Rock Isle -> Needle Rock Cave"]                                                         = "Secret Cave Entrance on Needle Rock Isle",
+   ["Angular Isles Small Isle -> Angular Isles Cave"]                                               = "Secret Cave Entrance on Angular Isles",
+   ["Boating Course Small Isle -> Boating Course Cave"]                                             = "Secret Cave Entrance on Boating Course", 
+   ["Stone Watcher Island -> Stone Watcher Cave"]                                                   = "Secret Cave Entrance on Stone Watcher Island",
+   ["Overlook Island Upper Isles -> Overlook Cave"]                                                 = "Secret Cave Entrance on Overlook Island",
+   ["Birds Peak Rock Behind Bars -> Birds Peak Rock Cave"]                                          = "Secret Cave Entrance on Bird's Peak Rock",
+   ["Pawprint Isle -> Pawprint Chu Chu Cave"]                                                       = "Secret Cave Entrance on Pawprint Isle", 
+   ["Pawprint Wizzrobe Cave Isle -> Pawprint Wizzrobe Cave"]                                        = "Secret Cave Entrance on Pawprint Isle Side Isle", 
+   ["Diamond Steppe Upper Island -> Diamond Steppe Warp Maze"]                                      = "Secret Cave Entrance on Diamond Steppe Island",
+   ["Bomb Island -> Bomb Island Cave"]                                                              = "Secret Cave Entrance on Bomb Island",
+   ["Rock Spire Upper Ledges -> Rock Spire Cave"]                                                   = "Secret Cave Entrance on Rock Spire Isle",
+   ["Shark Island -> Shark Island Cave"]                                                            = "Secret Cave Entrance on Shark Island",
+   ["Cliff Plateau Isles -> Cliff Plateau Cave"]                                                    = "Secret Cave Entrance on Cliff Plateau Isles", 
+   ["Horseshoe Island Past Tentacles -> Horseshoe Cave"]                                            = "Secret Cave Entrance on Horseshoe Island",
+   ["Star Island -> Star Island Cave"]                                                              = "Secret Cave Entrance on Star Island",
+   ["Ice Ring Interior -> Ice Ring Inner Cave"]                                                     = "Inner Entrance in Ice Ring Isle Secret Cave",
+   ["Cliff Plateau Highest Isle -> Cliff Plateau Cave Past Wooden Barrier"]                         = "Inner Entrance in Cliff Plateau Isles Secret Cave",
+   ["Outset Forest of Fairies -> Outset Island - Great Fairy Fountain"]                             = "Fairy Fountain Entrance on Outset Island", 
+   ["Thorned Fairy Island Past Tentacles -> Thorned Fairy Island - Great Fairy Fountain"]           = "Fairy Fountain Entrance on Thorned Fairy Island", 
+   ["Eastern Fairy Island Past Boulder -> Eastern Fairy Island - Great Fairy Fountain"]             = "Fairy Fountain Entrance on Eastern Fairy Island", 
+   ["Western Fairy Island Past Flames -> Western Fairy Island - Great Fairy Fountain"]              = "Fairy Fountain Entrance on Western Fairy Island", 
+   ["Southern Fairy Island Behind Wooden Barrier -> Southern Fairy Island - Great Fairy Fountain"]  = "Fairy Fountain Entrance on Southern Fairy Island",
+   ["Northern Fairy Island -> Northern Fairy Island - Great Fairy Fountain"]                        = "Fairy Fountain Entrance on Northern Fairy Island"
+
+}
+
+local _EXIT_ALIASES = {
+
+    ["DRC First Room"]                                  = "Dragon Roost Cavern",
+    ["FW First Room"]                                   = "Forbidden Woods",
+    ["TOTG Entrance Room"]                              = "Tower of the Gods",
+    ["ET First Room"]                                   = "Earth Temple",
+    ["WT First Room"]                                   = "Wind Temple",
+    ["FW Mini Boss Room"]                               = "Forbidden Woods Miniboss Arena",
+    ["TOTG Mini Boss Room"]                             = "Tower of the Gods Miniboss Arena",
+    ["ET Mini Boss Room"]                               = "Earth Temple Miniboss Arena",
+    ["WT Mini Boss Room"]                               = "Wind Temple Miniboss Arena",
+    ["Hyrule Castle Sword Chamber"]                     = "Master Sword Chamber",
+    ["Gohma Battle Arena"]                              = "Gohma Boss Arena",
+    ["Kalle Demos Battle Arena"]                        = "Kalle Demos Boss Arena",
+    ["Gohdan Battle Arena"]                             = "Gohdan Boss Arena",
+    ["Helmaroc King Battle Arena"]                      = "Helmaroc King Boss Arena",
+    ["Jalhalla Battle Arena"]                           = "Jalhalla Boss Arena",
+    ["Molgera Battle Arena"]                            = "Molgera Boss Arena",
+    ["Outset Savage Labyrinth"]                         = "Savage Labyrinth",
+    ["Dragon Roost Island Cave"]                        = "Dragon Roost Island Secret Cave",
+    ["Fire Mountain Interior"]                          = "Fire Mountain Secret Cave",
+    ["Ice Ring Interior"]                               = "Ice Ring Isle Secret Cave",
+    ["Cabana Labyrinth"]                                = "Cabana Labyrinth",
+    ["Needle Rock Cave"]                                = "Needle Rock Isle Secret Cave",
+    ["Angular Isles Cave"]                              = "Angular Isles Secret Cave",
+    ["Boating Course Cave"]                             = "Boating Course Secret Cave",
+    ["Stone Watcher Cave"]                              = "Stone Watcher Island Secret Cave",
+    ["Overlook Cave"]                                   = "Overlook Island Secret Cave",
+    ["Birds Peak Rock Cave"]                            = "Bird's Peak Rock Secret Cave",
+    ["Pawprint Chu Chu Cave"]                           = "Pawprint Isle Chuchu Cave",
+    ["Pawprint Wizzrobe Cave"]                          = "Pawprint Isle Wizzrobe Cave",
+    ["Diamond Steppe Warp Maze"]                        = "Diamond Steppe Island Warp Maze Cave",
+    ["Bomb Island Cave"]                                = "Bomb Island Secret Cave",
+    ["Rock Spire Cave"]                                 = "Rock Spire Isle Secret Cave",
+    ["Shark Island Cave"]                               = "Shark Island Secret Cave",
+    ["Cliff Plateau Cave"]                              = "Cliff Plateau Isles Secret Cave",
+    ["Horseshoe Cave"]                                  = "Horseshoe Island Secret Cave",
+    ["Star Island Cave"]                                = "Star Island Secret Cave",
+    ["Ice Ring Inner Cave"]                             = "Ice Ring Isle Inner Cave",
+    ["Cliff Plateau Cave Past Wooden Barrier"]          = "Cliff Plateau Isles Inner Cave",
+    ["Outset Island - Great Fairy Fountain"]            = "Outset Fairy Fountain",
+    ["Thorned Fairy Island - Great Fairy Fountain"]     = "Thorned Fairy Fountain",
+    ["Eastern Fairy Island - Great Fairy Fountain"]     = "Eastern Fairy Fountain",
+    ["Western Fairy Island - Great Fairy Fountain"]     = "Western Fairy Fountain",
+    ["Southern Fairy Island - Great Fairy Fountain"]    = "Southern Fairy Fountain",
+    ["Northern Fairy Island - Great Fairy Fountain"]    = "Northern Fairy Fountain"
+
+}
+
+local function normalize_entrance(name)
+  local alias = _ENTRANCE_ALIASES[name]
+  if alias == nil then
+    print("UNMAPPED ENTRANCE: [" .. tostring(name) .. "]")
+    return name
+  end
+  return alias
+end
+
+
+local function normalize_exit(name)
+  local alias = _EXIT_ALIASES[name]
+  if alias == nil then
+    print("UNMAPPED EXIT: [" .. tostring(name) .. "]")
+    return name
+  end
+  return alias
+end
+
+
 local _STAGE_MAPPING = {
     {
         "The Great Sea",
@@ -401,9 +520,9 @@ function onClear(slot_data)
         -- entrances as the player goes through them.
         local entrances = slot_data["entrances"]
         if entrances then
-            --print(dump_table(entrances))
+            print(dump_table(entrances))
             for entrance, exit in pairs(entrances) do
-                SLOT_DATA_EXIT_TO_ENTRANCE[exit] = entrance
+                SLOT_DATA_EXIT_TO_ENTRANCE[normalize_exit(exit)] = normalize_entrance(entrance)
             end
         else
             print("'entrances' was not present in slot_data, automatic entrance assignment will not be available")
@@ -455,24 +574,28 @@ end
 
 function entranceRandoAssignEntranceFromVisitedStage(stage_name, prevent_logic_update)
     local exit_name = STAGE_NAME_TO_EXIT_NAME[stage_name]
+
     if not exit_name then
         print("Could not find an exit_name for "..stage_name)
         return
     end
 
     local exit = EXITS_BY_NAME[exit_name]
+
     if not exit then
         print("Could not find an exit with the name "..exit_name)
         return
     end
 
     local entrance_name = SLOT_DATA_EXIT_TO_ENTRANCE[exit_name]
+
     if not entrance_name then
         print("Could not find an entrance_name for "..exit_name)
         return
     end
 
     local entrance = ENTRANCE_BY_NAME[entrance_name]
+
     if not entrance then
         print("Could not find an entrance with the name "..entrance_name)
         return
