@@ -14,23 +14,6 @@
     "initial_active_state": true
   },
   {
-    "name": "Enable Tuner Logic",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/items/item7_off.png",
-        "codes": "tunerlogic,tunerlogic_off"
-      },
-      {
-        "img": "images/items/item7.png",
-        "codes": "tunerlogic,tunerlogic_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Dungeon Secrets",
     "type": "toggle",
     "img": "images/items/pot.png",
@@ -316,12 +299,6 @@
     "type": "toggle",
     "img": "images/items/item13.png",
     "codes": "sequence_break_other"
-  },
-  {
-    "name": "Show Tingle Tuner Sequence Breaks",
-    "type": "toggle",
-    "img": "images/items/item7.png",
-    "codes": "sequence_break_tingle_tuner"
   },
   {
     "name": "Automatic Map Switching",

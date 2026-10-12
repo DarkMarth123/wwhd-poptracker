@@ -422,7 +422,7 @@ function onClear(slot_data)
     setFromSlotData('progression_minigames', 'minigames')
     setFromSlotData('progression_dungeon_secrets', 'secretpot')
 
-    setFromSlotData('enable_tuner_logic', 'tunerlogic')
+    -- setFromSlotData('enable_tuner_logic', 'tunerlogic')
     setFromSlotData('logic_obscurity', 'tww_obscure')
     setFromSlotData('logic_precision', 'tww_precise')
     setFromSlotData('sword_mode', 'tww_sword_mode')

@@ -142,14 +142,14 @@
     "item_margin": "4,2",
     "item_size": "30,30",
     "rows": [
-      ["dungeons", "tinglechests", "tunerlogic"],
+      ["dungeons", "tinglechests", "misc"],
       ["puzzlecaves", "combat", "labyrinth"],
       ["fairies", "shortsq", "longsq"],
       ["spoilssq", "minigames", "sploosh"],
       ["gifts", "mail", "lookouts"],
       ["submarines", "reefs", "octos"],
       ["triforcesalvage", "treasuresalvage", "expensive"],
-      ["secretpot", "islandpuzzles", "misc"]
+      ["secretpot", "islandpuzzles"]
     ]
   },
   "progression_settings_grid": {
@@ -158,14 +158,14 @@
     "item_margin": "4,2",
     "item_size": "30,30",
     "rows": [
-      ["dungeons", "tinglechests"],
+      ["dungeons", "tinglechests", "misc"],
       ["puzzlecaves", "combat", "labyrinth"],
       ["fairies", "shortsq", "longsq"],
       ["spoilssq", "minigames", "sploosh"],
       ["gifts", "mail", "lookouts"],
       ["submarines", "reefs", "octos"],
       ["triforcesalvage", "treasuresalvage", "expensive"],
-      ["secretpot", "islandpuzzles", "misc"]
+      ["secretpot", "islandpuzzles"]
     ]
   },
   "required_bosses_grid": {
@@ -201,8 +201,7 @@
       ["tww_obscure"],
       ["tww_precise"],
       ["tww_sword_mode"],
-      ["tww_rematch_bosses_skipped"],
-      ["tunerlogic"]
+      ["tww_rematch_bosses_skipped"]
     ]
   },
   "other_settings_grid": {
@@ -222,8 +221,7 @@
     "rows": [
       ["setting_show_higher_logic", "sequence_break_swift_sail"],
       ["sequence_break_ballad", "sequence_break_passing"],
-      ["sequence_break_spoils_grapple", "sequence_break_tingle_tuner"],
-      ["sequence_break_other"]
+      ["sequence_break_spoils_grapple", "sequence_break_other"]
     ]
   },
   "other_tracker_settings_grid": {

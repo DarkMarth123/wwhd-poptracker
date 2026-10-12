@@ -374,10 +374,8 @@
       },
       {
         "name": "Secret Cave Entrance on Dragon Roost Island",
-        "_comment": "Tingle Bombs can be used here.",
         "access_rules": [
-          "@Macros/can_move_boulders",
-          "@Macros/_tingle_tuner_sequence_break, [@Macros/can_move_boulders]"
+          "@Macros/can_move_boulders"
         ],
         "sections": [
           {
@@ -552,7 +550,7 @@
         "name": "Secret Cave Entrance on Bird's Peak Rock",
         "access_rules": [
           "bait, @Macros/can_buy_hyoi_pears",
-          "sequence_break_other, [bait], [@Macros/can_buy_hyoi_pears], grapple"// The bars blocking the entrance can be clipped through by swinging and jumping with the grappling hook
+          "sequence_break_other, [bait], [@Macros/can_buy_hyoi_pears], grapple"
         ],
         "sections": [
           {
@@ -643,13 +641,9 @@
       },
       {
         "name": "Secret Cave Entrance on Rock Spire Isle",
-        "_comment": [
-          "Tingle Bombs can be used here. The second bomb needs to be positioned with the GBA dpad, the others can be",
-          " placed right on the edge before the rock."
-        ],
+        
         "access_rules": [
-          "bombs",
-          "@Macros/_tingle_tuner_sequence_break, [bombs]"
+          "bombs"
         ],
         "sections": [
           {
@@ -724,10 +718,8 @@
       },
       {
         "name": "Secret Cave Entrance on Star Island",
-        "_comment": "Tingle Bombs can be used here.",
         "access_rules": [
-          "@Macros/can_move_boulders",
-          "@Macros/_tingle_tuner_sequence_break, [@Macros/can_move_boulders]"
+          "@Macros/can_move_boulders"
         ],
         "sections": [
           {
